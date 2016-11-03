@@ -1,0 +1,49 @@
+    /*Base style*/
+        .mainbody {
+            width: 500px;
+            margin: 0 auto;
+            font-family: sans-serif;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+        }
+
+        .wrapper {
+          background: grey url(../img/background_1024_1024.png) no-repeat;
+          background-size: 100%;
+          width: 1024px;
+          height: 1024px;
+          margin: 0 auto;
+        }
+
+        /*Some corrections for centered images*/
+        .centered_pic {
+          text-align: center;
+          margin-top: -4px;
+        }
+        /*Some corrections for non-standart text entry with "0" left margin*/
+        .subphoto_text {
+          margin-left: 0px;
+        }
+        /*Title font size corrections*/
+        h1 {
+          font-size: 36px;
+        }
+        /*Subtitle font size corrections*/
+        h2 {
+          font-size: 18px;
+        }
+        /*Defining break line*/
+        hr {
+          margin: 0;
+          color: black;
+        }
+        /*Defining left margins for body text*/
+        p {
+          margin-left: 24px;
+            }
+        /*Defdining style for Links*/
+        a {
+          color: blue;
+          font-style: italic;
+        }

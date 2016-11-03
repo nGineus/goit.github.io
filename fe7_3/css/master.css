@@ -1,0 +1,171 @@
+.wrapper {
+    border: 1px;
+    width: 960px;
+    padding: 0 50px;
+    border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    margin: 0 auto;
+  }
+
+.header {
+    width: 966px;
+    padding: 40px 0 0 0;
+  }
+
+.sidebar {
+    width: 240px;
+    height: 240px;
+    float: left;
+    margin: 0px 40px 40px 0px;
+  }
+
+.header_menu {
+    width: auto;
+    height: 40px;
+    background: #4c4c4c;
+    /*background: grey url(../img/menu_back_966_40.png) no-repeat;*/
+    overflow: hidden;
+    background: -webkit-linear-gradient(top, #5e5e5e 0%, #444444 100%);
+    margin: 40px 0;
+    font: 14px 'Open Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 1px black;
+    color: white;
+  }
+
+.header_menu_ul {
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+.header_menu_li {
+    align-content: center;
+    vertical-align: middle;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    padding: 0px;
+  }
+
+  .header_menu_li a {
+    color: white;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    height: 40px;
+    padding: 12px 30px;
+    line-height: 100%;
+  }
+
+
+.header_menu_li:hover {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+    background-color: #464646;
+  }
+
+.sidebar_menu_ul {
+    font: 14px/14px 'Open Sans', Arial, sans-serif;
+    text-indent: 9px;
+    padding: 0;
+    border: 1px solid #c8c8c8;
+  }
+
+.sidebar_menu_li {
+    padding: 0;
+    border-bottom: 1px solid #c8c8c8;
+  }
+
+.sidebar_menu_li:last-child {
+    border-bottom: 0px solid #c8c8c8;
+  }
+
+  .sidebar_menu_li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 13px 0px;
+    line-height: 100%;
+  }
+
+.sidebar_menu_li:hover {
+    text-indent: 20px;
+    background-color: #f0f0f0;
+  }
+
+.footer_menu {
+    display: flex;
+    /* Отображать как строчный элемент */
+    margin-right: 5px;
+    /* Отступ слева */
+    border: 1px solid #000;
+    /* Рамка вокруг текста */
+    padding: 3px;
+    /* Поля вокруг текста */
+    width: 70px;
+}
+
+.footer_menu_ul {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.footer_menu_li {
+    width: 100px;
+    font: 13.33px/20px 'Open Sans', Arial, sans-serif;
+      display: block;
+  }
+
+.footer_menu_li a {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright_line {
+    width: 526px;
+    font: 13.33px/20px 'Open Sans', Arial, sans-serif;
+    text-align: right;
+    padding: 9px 0px;
+  }
+
+.copyright_line a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer_menu_li:hover {
+    text-decoration: underline;
+  }
+
+.stuff_img {
+    text-align: center;
+    width: 588px;
+    height: auto;
+    border: 1px solid #c8c8c8;
+    padding: 48px;
+    margin: 0 0 40px 0;
+  }
+
+.stuff_description {
+    font: 13.33px/21.33px 'Open Sans', Arial, sans-serif;
+    padding: 0 24px;
+  }
+
+.content {
+    margin-left: 280px;
+    width: 686px;
+  }
+
+.footer {
+    width: 906px;
+    height: 40px;
+    background: #e1e1e1;
+    margin: 40px 0px 0px 0px;
+    padding: 0 30px;
+    display: flex;
+  }
+
+  .bottom_line {
+    height: 40px;
+  }

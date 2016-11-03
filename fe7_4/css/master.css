@@ -1,0 +1,142 @@
+.wrapper {
+      width: auto;
+      min-height: 690px;
+      padding: 0;
+      margin: 0 auto;
+      overflow: hidden;
+      background-color: #0c739f;
+      background-image: url('../img/back_1920_1060.png');
+      background-repeat: no-repeat;
+  }
+
+.logo__pic {
+  display: flex;
+}
+
+  p {
+    font: 14px 'Open Sans', Arial, sans-serif;
+    color: black;
+  }
+
+  h1 {
+    font: 18px 'Open Sans', Arial, sans-serif;
+    text-align: center;
+  }
+
+.body_main {
+      width: 1000px;
+      /*height: 175px;*/
+      background-color: white;
+      margin: 0 auto;
+    }
+
+.logo__header {
+      height: 237px;
+      margin: 0;
+      padding: 0;
+    }
+
+.header__baner {
+    margin: 0 0 -3px 0;
+    }
+
+.logo__adres {
+      margin-left: 200px;
+    }
+
+.header_menu {
+      width: 1000px;
+      height: 28px;
+      border-top: 1px solid #cacbcb;
+      border-bottom: 1px solid black;
+      margin: 0;
+      background: -webkit-linear-gradient(top, #373737 0%, #303030 100%);
+      /*overflow: hidden;*/
+    }
+
+.header_menu__ul {
+      align-content: center;
+      align-items: center;
+    }
+
+.header_menu__li_active,
+.header_menu__li {
+      font: 14px 'Tahoma', Arial, sans-serif;
+      text-decoration-color: color;
+      align-content: center;
+      vertical-align: middle;
+      padding: 4px 20px 0 20px;
+      line-height: 100%;
+      height: 22px;
+      display: flex;
+      float: left;
+    }
+
+.header_menu__li a {
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
+
+.header__submenu {
+  display: block;
+  position: absolute;
+  top: -9999px;
+}
+
+.header_menu__li_active:hover .header__submenu {
+  display: inline-block;
+  position: relative;
+  top: 0;
+}
+
+a.header__submenu {
+      color: yellow;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+    }
+
+.left_bar {
+      width: 203px;
+      float: left;
+      background: #edeef0;
+      padding: 0 8px;
+      padding-bottom: 20000px;
+      margin-bottom: -20000px;
+    }
+
+.content {
+      width: 544px;
+      float: left;
+      padding: 0 8px;
+      background: white;
+      border-left: 1px solid gray;
+      border-right: 1px solid gray;
+      padding-bottom: 20000px;
+      margin-bottom: -20000px;
+    }
+
+.right_bar {
+      width: 203px;
+      float: left;
+      padding: 0 8px;
+      background: #edeef0;
+      padding-bottom: 20000px;
+      margin-bottom: -20000px;
+    }
+
+.footer {
+    clear: both;
+    width: 1000px;
+    height: 28px;
+    background: gray;
+  }
+
+.m_wrapper {
+    content: ' ';
+    clear: both;
+    display: block;
+  }
