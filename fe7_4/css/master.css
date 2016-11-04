@@ -1,6 +1,6 @@
 .wrapper {
       width: auto;
-      min-height: 690px;
+      min-height: 990px;
       padding: 0;
       margin: 0 auto;
       overflow: hidden;
@@ -130,9 +130,13 @@ a.header__submenu {
 
 .footer {
     clear: both;
-    width: 1000px;
+    width: auto;
+    margin: 0 auto;
+    padding: 8px;
     height: 28px;
-    background: gray;
+    background-color: #0c739f;
+    color: white;
+    text-align: center;
   }
 
 .m_wrapper {
