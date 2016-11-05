@@ -100,39 +100,73 @@
 .header_menu__li,
 .header_menu__li_active {
       font: 14px 'Tahoma', sans-serif;
+      text-align: left;
       text-decoration: none;
       align-content: center;
       vertical-align: middle;
-      padding: 4px 20px 0 30px;
+      padding: 4px 28px 0 28px;
       line-height: 100%;
-      height: 22px;
+      height: 25px;
       display: block;
       float: left;
       position: relative;
     }
 
+.header_submenu__li {
+    padding: 4px 30px 4px 0px;
+    text-align: left;
+    line-height: 100%;
+  }
+
+.header_submenu__li:hover {
+  background-color: black;
+  text-indent: 6px;
+}
+
+.header_menu__li_active:hover,
+.header_menu__li:hover {
+  background-color: black;
+}
+
+.header_menu__li:hover a {
+  color: #aeeef5;
+  text-shadow: 2px 2px 1px black;
+}
+
+.header_menu__li_active:hover a {
+  color: #aeeef5;
+  text-shadow: 2px 2px 1px black;
+}
+
+.header_menu__li_active a,
 .header_menu__li a {
       color: white;
-      text-align: center;
+      text-align: left;
       vertical-align: middle;
       text-decoration: none;
     }
 
 .header__submenu {
-  display: flex;
-  position: relative;
+  display: none;
+  position: absolute;
   top: -9999px;
 }
 
+
+
 .header_menu__li_active:hover .header__submenu {
   display: block;
-  position: relative;
-  top: 5px;
+  position: absolute;
+  top: 26px;
+  left: 0px;
+  padding: 6px 12px;
+  background-color: #303030;
+  width: auto;
 }
 
-header__submenu a {
-      color: yellow;
-      text-align: center;
+.header__submenu a {
+      float: none;
+      text-align: left;
       vertical-align: middle;
       text-decoration: none;
     }
@@ -193,4 +227,5 @@ header__submenu a {
   clear: both;
   display: inline-block;
   overflow: hidden;
+  position: relative;
 }
