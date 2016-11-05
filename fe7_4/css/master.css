@@ -213,13 +213,17 @@
     margin: 0 auto;
     padding: 8px;
     height: 24px;
-    color: white;
-    font: 14px 'Tahoma', sans-serif;
     text-align: center;
     z-index: 0;
     position: relative;
     background-color: #0c739f;
   }
+
+.footer a {
+  color: white;
+  font: 14px 'Tahoma', sans-serif;
+  text-decoration: none;
+}
 
 .clearfix::after {
   content: '';
