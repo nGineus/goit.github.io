@@ -1,17 +1,18 @@
 .wrapper {
       width: auto;
-      /*min-height: 990px;*/
       padding: 0;
       margin: 0 auto;
-      /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.7);*/
-      /*overflow: hidden;
       background-color: #0c739f;
+      /*box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.7);*/
+      /*overflow: hidden;*/
+      /*background-color: #0c739f;*/
       /*background-image: url('../img/back_1920_1060.png');
       background-repeat: no-repeat;*/
+      z-index: 100;
   }
 
 .background_gradient__1 {
-  background: linear-gradient(#128aa7 27px, #5ef0ff 1px, #40c6d3 1px, #2ed3e5 25px, #ffffff);
+  background: linear-gradient(#128aa7 27px, #5ef0ff 27px, #5ef0ff 29px, #40c6d3 29px, #2ed3e5 56px, #ffffff);
 }
 
 .background_gradient__2 {
@@ -22,6 +23,7 @@
   float: left;
   position: relative;
   background-color: white;
+  height: 175px;
 }
 
   p {
@@ -31,12 +33,14 @@
 
   h1 {
     font: 18px/30px 'Tahoma', sans-serif;
+    color: #424c43;
     text-align: center;
   }
 
 .body_main {
       width: 1000px;
-      min-height: 178px;
+      min-height: 175px;
+      padding: 0;
       margin: 0 auto;
       box-shadow: 1px 5px 12px 3px rgba(0,0,0,0.75);
     }
@@ -54,6 +58,11 @@
   font: 12px/19px sans-serif;
   color: rgba(18, 138, 167, 0.8);
   text-align: left;
+}
+
+.logo__adres a {
+  color: rgba(18, 138, 167, 0.8);
+  text-decoration: none;
 }
 
 .flags_menu {
@@ -90,7 +99,7 @@
     }
 
 .triangle_text {
-    font: 8px sans-serif;
+    font: 9px sans-serif;
 }
 
 .header_menu__ul {
@@ -106,7 +115,6 @@
       font: 14px 'Tahoma', sans-serif;
       text-align: left;
       text-decoration: none;
-      /*align-content: center;*/
       vertical-align: middle;
       padding: 4px 30px 0 28px;
       line-height: 100%;
@@ -119,26 +127,27 @@
 .header_submenu__li {
     padding: 4px 30px 4px 0px;
     text-align: left;
-    line-height: 100%;
+    line-height: 120%;
+    color: white;
   }
 
 .header_submenu__li:hover {
   background-color: black;
+  color: #aeeef5;
+  text-shadow: 1px 1px 1px black;
   }
 
-.header_menu__li_active:hover,
+/*.header_menu__li_active:hover,
 .header_menu__li:hover {
   background-color: black;
-}
+}*/
 
 .header_menu__li:hover a {
-  color: #aeeef5;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 .header_menu__li_active:hover a {
-  color: #aeeef5;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 .header_menu__li_active a,
@@ -152,19 +161,18 @@
 .header__submenu {
   display: none;
   position: absolute;
+  min-width: 140px;
   top: -9999px;
 }
-
-
 
 .header_menu__li_active:hover .header__submenu {
   display: block;
   position: absolute;
-  top: 26px;
-  left: 0px;
-  padding: 6px 12px;
+  top: 28px;
+  left: 18px;
+  padding: 0 0 2px 0;
+  text-indent: 12px;
   background-color: #303030;
-  width: auto;
 }
 
 .header__submenu a {
@@ -172,13 +180,15 @@
       text-align: left;
       vertical-align: middle;
       text-decoration: none;
+      line-height: 120%;
     }
 
+.right_bar,
 .left_bar {
       width: 225px;
       float: left;
       background-color: #edeef0;
-      padding: 0 8px;
+      padding: 10px 15px;
       padding-bottom: 20000px;
       margin-bottom: -20000px;
       box-sizing: border-box;
@@ -194,16 +204,7 @@
       padding-bottom: 20000px;
       margin-bottom: -20000px;
       box-sizing: border-box;
-    }
-
-.right_bar {
-      width: 225px;
-      float: left;
-      padding: 0 8px;
-      background-color: #edeef0;
-      padding-bottom: 20000px;
-      margin-bottom: -20000px;
-      box-sizing: border-box;
+      z-index: 100;
     }
 
 .footer {
@@ -212,10 +213,12 @@
     margin: 0 auto;
     padding: 8px;
     height: 24px;
-    background-color: #0c739f;
     color: white;
-    font: 14px 'Tahoma', Arial, sans-serif;
+    font: 14px 'Tahoma', sans-serif;
     text-align: center;
+    z-index: 0;
+    position: relative;
+    background-color: #0c739f;
   }
 
 .clearfix::after {
@@ -227,7 +230,7 @@
 .container {
   content: '';
   clear: both;
-  display: inline-block;
   overflow: hidden;
   position: relative;
+  border-bottom: 3px solid black;
 }
