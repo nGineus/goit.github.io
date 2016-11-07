@@ -27,6 +27,7 @@
 .logo__pic {
   float: left;
   position: relative;
+  overflow: hidden;
   background-color: white;
   height: 175px;
 }
