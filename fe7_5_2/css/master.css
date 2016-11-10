@@ -1,0 +1,61 @@
+.yellow_cell {
+  background: #fff869;
+}
+
+.red_cell {
+  background: #ff563e;
+}
+
+.blue_cell {
+  background: #054480;
+}
+
+.gray_cell {
+  background: #303030;
+}
+
+.white_cell {
+  background: #fff;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: #ccc;
+  vertical-align: middle;
+}
+
+.cell_style {
+  text-align: center;
+  vertical-align: middle;
+  border: 10px solid black;
+}
+
+.artistic_table {
+  position: absolute;
+  /*width: 500px;*/
+  /*height: 540px;*/
+  top: 50%;
+  left: 50%;
+  margin: -270px 0 0 -270px;
+  border: 10px;
+  background: black;
+  /*border-collapse: collapse;*/
+}
+
+.no_top_border {
+  border-top: 0px solid transparent;
+}
+
+.no_bottom_border {
+  border-bottom: 0px solid transparent;
+}
+
+.no_left_border {
+  border-left: 0px solid transparent;
+}
+
+.no_right_border {
+  border-right: 0px solid transparent;
+}
