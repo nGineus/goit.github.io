@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 909px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  /*float: left;*/
+  width: 909px;
+  height: 54px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 10px 7px 10px 7px;
+}
+
+/* FOR ALL*/
+
+.teb {
+  border: 1px solid red;
+}
+.floatleftblock {
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*HEADER STYLES*/
+
+.login_shape {
+    position: relative;
+    /*top: 0px;*/
+    left: 314px;
+    width: 495px;
+    height: 26px;
+    background-color: #b1bcc0;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+    border-radius: 4px;
+    box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+}
+
+.phone_icon {
+  position: absolute;
+  top: 16px;
+  left: 7px;
+}
+
+.phone_text {
+  position: absolute;
+  top: 12px;
+  left: 33px;
+  width: 276px;
+  height: 25px;
+  color: #5e696d;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.login_pic {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.enter_form {
+  width: 115px;
+  height: 18px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid #9ba1a3;
+  position: absolute;
+  top: 5px;
+  text-indent: 4px;
+}
+
+.form_name {
+  left: 25px;
+}
+
+.form_pass {
+  left: 147px;
+}
+
+.form_enter {
+  position: absolute;
+  width: 28px;
+  height: 20px;
+  top: 5px;
+  left: 268px;
+  /*background-color: transparent;*/
+  /*display: none;*/
+}
+
+.reg_form {
+  position: absolute;
+  top: 2px;
+  left: 268px;
+}
+
+.reg_form span,
+.reg_form a {
+  color: white;
+  font-family: "Lucida Sans Unicode";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.restore_pass {
+  position: absolute;
+  top: 5px;
+  width: 95px;
+  height: 13px;
+  color: #bfbfbf;
+  font-family: "Lucida Sans Unicode";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: underline;
+}
+
+.restore_pass a {
+
+}
+
+.main_menu {
+  width: 909px;
+  margin: 0 auto;
+  min-height: 32px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/*MENU STYLES*/
+
+.menu_shape {
+  /* Menu Bar */
+  width: 912px;
+  height: 34px;
+  background-color: white;
+  background-image: linear-gradient(to top, black 0%, #576068 100%);
+  border: 1px solid #0d1642;
+  border-radius: 5px;
+  box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
+}
+
+/*FILTER STILES*/
+
+.find_shape {
+  /* White Squares for find blocks */
+  width: 415px;
+  height: 134px;
+  background-color: white;
+  border: 1px solid #9c9c9d;
+  border-radius: 17px;
+  box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, 0.75);
+}
