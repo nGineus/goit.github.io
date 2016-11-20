@@ -9,13 +9,12 @@ body {
 }
 
 header {
-  /*float: left;*/
   width: 909px;
   height: 54px;
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding: 10px 7px 10px 7px;
+  padding: 14px 7px 6px 7px;
 }
 
 /* FOR ALL*/
@@ -29,30 +28,28 @@ header {
   vertical-align: top;
 }
 
-/*HEADER STYLES*/
-
-.login_shape {
-    position: relative;
-    /*top: 0px;*/
-    left: 314px;
-    width: 495px;
-    height: 26px;
-    background-color: #b1bcc0;
-    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
-    border-radius: 4px;
-    box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+.pos_absolute {
+  position: absolute;
 }
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+  }
+
+/*HEADER STYLES*/
 
 .phone_icon {
   position: absolute;
-  top: 16px;
-  left: 7px;
+  top: 21px;
+  left: 6px;
 }
 
 .phone_text {
   position: absolute;
-  top: 12px;
-  left: 33px;
+  top: 16px;
+  left: 32px;
   width: 276px;
   height: 25px;
   color: #5e696d;
@@ -60,12 +57,25 @@ header {
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+  letter-spacing: 0.4px;
 }
 
 .login_pic {
   position: absolute;
   top: 5px;
   left: 8px;
+}
+
+.login_shape {
+    position: relative;
+    top: 3px;
+    left: 306px;
+    width: 495px;
+    height: 26px;
+    background-color: #b1bcc0;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+    border-radius: 4px;
+    box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
 }
 
 .enter_form {
@@ -75,49 +85,61 @@ header {
   box-sizing: border-box;
   border: 1px solid #9ba1a3;
   position: absolute;
-  top: 5px;
+  top: 4px;
   text-indent: 4px;
 }
 
 .form_name {
-  left: 25px;
+  left: 24px;
 }
 
 .form_pass {
-  left: 147px;
+  left: 145px;
 }
 
 .form_enter {
   position: absolute;
-  width: 28px;
-  height: 20px;
-  top: 5px;
-  left: 268px;
-  /*background-color: transparent;*/
-  /*display: none;*/
+  width: 36px;
+  height: 25px;
+  top: -1px;
+  left: 261px;
+  background-color: transparent;
+  border: 0 solid transparent;
+  cursor: pointer;
+}
+
+input.enter_form::-webkit-input-placeholder {
+  color: #97a2a6;
+  font-family: "Lucida Sans Unicode";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 25px;
 }
 
 .reg_form {
   position: absolute;
-  top: 2px;
-  left: 268px;
+  top: -1px;
+  left: 296px;
 }
 
+.login_form button,
 .reg_form span,
-.reg_form a {
+.registration {
   color: white;
   font-family: "Lucida Sans Unicode";
   font-size: 11px;
   font-weight: 400;
   line-height: 25px;
+  letter-spacing: -0.3px;
   text-decoration: none;
 }
 
 .restore_pass {
-  position: absolute;
   top: 5px;
   width: 95px;
   height: 13px;
+  padding-left: 18px;
+  text-decoration: none;
   color: #bfbfbf;
   font-family: "Lucida Sans Unicode";
   font-size: 12px;
@@ -126,11 +148,7 @@ header {
   text-decoration: underline;
 }
 
-.restore_pass a {
-
-}
-
-.main_menu {
+.login_form {
   width: 909px;
   margin: 0 auto;
   min-height: 32px;
@@ -138,28 +156,527 @@ header {
   vertical-align: top;
 }
 
+.navigation {
+  position: relative;
+  top: -1px;
+  left: 807px;
+  width: 94px;
+  min-height: 36px;
+  background: url("../img/navigation.png") no-repeat center center;
+}
+
+.navbutton {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+.navbutton_1 {
+  position: absolute;
+  top: 7px;
+  left: 21px;
+}
+
+.navbutton_2 {
+  position: absolute;
+  top: 6px;
+  left: 40px;
+}
+
+.navbutton_3 {
+  position: absolute;
+  top: 6px;
+  left: 64px;
+}
 
 /*MENU STYLES*/
 
 .menu_shape {
-  /* Menu Bar */
-  width: 912px;
+  width: 910px;
   height: 34px;
   background-color: white;
   background-image: linear-gradient(to top, black 0%, #576068 100%);
   border: 1px solid #0d1642;
   border-radius: 5px;
+  margin: 3px 0 12px 0;
   box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
 }
 
-/*FILTER STILES*/
+.main_menu {
+     font-size: 0;
+     width: 622px;
+     margin: 0;
+     padding: 5px 0 0 124px;
+     list-style: none;
+     float: left;
+}
+
+.main_menu_li {
+     display: inline-block;
+     vertical-align: top;
+}
+
+.text_main_menu {
+    display: block;
+    font-family: "Lucida Sans Unicode";
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    color: #b1bcc0;
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.text_main_menu:hover {
+  background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+  color: white;
+}
+
+.padding_1 {padding: 0 18px 0 21px;}
+
+.padding_2 {padding: 0 15px 0 17px;}
+
+.padding_3 {padding: 0 15px 0 15px;}
+
+.padding_4 {padding: 0 15px 0 15px;}
+
+.padding_5 {padding: 0 12px 0 12px;}
+
+.chart_block {
+  padding-top: 6px;
+}
+
+.chart_padding {
+  padding-left: 60px;
+  padding-top: 7px;
+  padding-right: 6px;
+  float: left;
+}
+
+.chart_gray_text {
+  color: #8a9296;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.chart_blue_text {
+  color: #0d5a8f;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.chart_text_padding {
+  padding-left: 8px;
+}
+
+/*FILTER STYLES*/
+
+.find_block {
+  display: inline-block;
+  vertical-align: top;
+}
 
 .find_shape {
-  /* White Squares for find blocks */
-  width: 415px;
-  height: 134px;
   background-color: white;
   border: 1px solid #9c9c9d;
   border-radius: 17px;
   box-shadow: 2.6px 4.3px 5px rgba(104, 104, 104, 0.75);
+  position: relative;
+}
+
+.find_shape_1 {
+  width: 415px;
+  height: 134px;
+  left: 3px;
+  float: left;
+}
+
+.find_shape_2 {
+  width: 193px;
+  height: 137px;
+  margin: -1px 10px 0 17px;
+  float: left;
+}
+
+.find_shape_3 {
+  width: 268px;
+  height: 136px;
+  margin-top: -2px;
+  float: left;
+}
+
+.find_shape1_txt1 {
+  position: absolute;
+  color: #154468;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.find_shape1_txt0 {
+  position: absolute;
+  color: #154467;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.find_shape1_txt2 {
+  position: absolute;
+  color: black;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 8px;
+}
+
+.find_shape1_txt3 {
+  color: #77858b;
+  font-family: Arial;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 8px;
+}
+
+.find_shape1_find {
+  position: absolute;
+  color: #154467;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 28px;
+  text-decoration: underline;
+}
+
+.find_selection_list {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 101px;
+  height: 17px;
+  border: 0;
+  background: #fff url("../img/arrow.png") no-repeat right center;
+  box-shadow: inset 2px 2px 3px 0px #979797;
+  text-indent: 4px;
+  color: black;
+  font-family: Arial;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+/* MAIN BLOCK */
+
+.container {
+  margin-top: 13px;
+  display: inline-block;
+}
+
+.left_column {
+  width: 191px;
+  min-height: 627px;
+  float: left;
+}
+
+.left_column {
+  width: 191px;
+  min-height: 627px;
+  float: left;
+}
+
+.left_column label {
+  color: #465961;
+  font-family: "Lucida Sans Unicode";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.left_column input {
+  position: relative;
+  top: 3px;
+  left: -3px;
+}
+
+.content {
+  width: 526px;
+  height: 627px;
+  background-color: white;
+  background-image: linear-gradient(to top, rgba(35, 75, 93, 0.24) 0%, rgba(201, 207, 209, 0.24) 100%);
+  border-radius: 3px;
+  padding: 0 9px 0 9px;
+  float: left;
+}
+
+section {
+  width: 140px;
+  float: left;
+  margin: 17px 14px 6px 13px;
+  display: inline-block;
+}
+
+section h1 {
+  font-family: "Lucida Sans Unicode";
+  font-weight: bold;
+  line-height: 13px;
+  color: #206988;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  text-indent: -2px;
+}
+
+section h2 {
+  font-family: "Lucida Sans Unicode";
+  font-weight: 400;
+  line-height: 16px;
+  color: #1f2528;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  text-indent: 2px;
+}
+
+.h3_subprice,
+section h3 {
+color: #114165;
+font-family: Arial;
+font-weight: bold;
+font-style: italic;
+line-height: 23px;
+text-indent: 8px;
+font-size: 16px;
+text-align: center;
+letter-spacing: 0.2px;
+}
+
+.h3_subprice {
+  font-size: 12px;
+}
+
+.catalog_section {
+  width: 139px;
+  height: 129px;
+  background-color: white;
+  border: 1px solid #a4aeb1;
+  border-radius: 7px;
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+}
+
+.right_column {
+  width: 191px;
+  min-height: 627px;
+  float: left;
+}
+
+.right_column label {
+  color: #465961;
+  font-family: "Lucida Sans Unicode";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.right_column input {
+  position: relative;
+  top: 3px;
+  left: -3px;
+}
+
+.right_selection {
+  position: absolute;
+    width: 80px;
+    height: 26px;
+    margin-left: 36px;
+    margin-top: 276px;
+    padding-right: 7px;
+    letter-spacing: 0.8px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #e5e9ea;
+    border-radius: 11px;
+    border: 1px solid #a7abae;
+    outline: none;
+    cursor: pointer;
+    background: -webkit-linear-gradient(top, rgb(32, 105, 136) 0%, rgb(17, 65, 101) 59%, rgb(15, 58, 94) 85%, rgb(12, 50, 86) 100%);
+    box-shadow: 2px 3px 5px 0 rgba(188, 188, 188, 1);
+  }
+
+aside {
+  position: relative;
+}
+
+aside.right_column h1 {
+  position: absolute;
+  width: 183px;
+  height: 27px;
+  background-color: white;
+  border-radius: 13px;
+  border: 1px solid #79878d;
+  box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+  color: #0c3256;
+  font-family: "Lucida Sans Unicode";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-indent: 31px;
+}
+
+aside.left_column h1 {
+  position: absolute;
+  width: 183px;
+  height: 27px;
+  background-color: white;
+  border-radius: 13px;
+  border: 1px solid #79878d;
+  box-shadow: 1.5px 2.6px 3px rgba(150, 150, 150, 0.75);
+  color: #0c3256;
+  font-family: "Lucida Sans Unicode";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  text-indent: 28px;
+  letter-spacing: -0.2px;
+}
+
+aside.right_column h2 {
+  position: absolute;
+  width: 136px;
+  height: 28px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #79878d;
+  color: #0c3256;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-indent: 30px;
+}
+
+aside.left_column h2 {
+  position: absolute;
+  width: 150px;
+  height: 28px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #79878d;
+  color: #0c3256;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-indent: 30px;
+}
+
+.left_selection {
+  position: absolute;
+}
+
+.left_selection li {
+    list-style-image: url(../img/aside_dot1.png);
+    line-height: 26px;
+    text-indent: -0.2em;
+}
+
+.left_selection li:hover {
+    list-style-image: url("../img/aside_dot2.png");
+}
+
+.left_selection li a {
+    display: block;
+    letter-spacing: 0.03em;
+    font-family: "Lucida Sans Unicode", sans-serif;
+    width: 125px;
+    font-size: 12px;
+    color: #465961;
+    text-decoration: none;
+}
+
+.left_selection li:hover a {
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    font-size: 14px;
+    color: #0c3256;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+.footer_logo {
+  display: table-cell;
+  text-align: center;
+  vertical-align:middle;
+  width: 909px;
+  height: 90px;
+  background: url("../img/bottom_logo_line.png") no-repeat center 36px;
+}
+
+/* FOOTER STYLES*/
+
+footer{
+  width: 909px;
+  height: 100px;
+  margin: 0;
+  background-color: #213a4d;
+  border: 1px solid #242a3c;
+}
+
+.footer_menu {
+     font-size: 0;
+     width: 909px;
+     margin: 0;
+     padding: 8px 0;
+     list-style: none;
+     float: left;
+     text-align: center;
+}
+
+.footer_menu_li {
+     display: inline-block;
+     vertical-align: top;
+}
+
+.text_footer_menu__last,
+.text_footer_menu {
+    display: block;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0.3px;
+    color: #bec6c9;
+    text-align: center;
+    text-decoration: none;
+    padding: 1px 13px;
+    border-right: 2px solid #bec6c9;
+}
+
+.text_footer_menu__last {
+  border-right: 2px solid transparent;
+}
+
+.text_footer_menu__last:hover,
+.text_footer_menu:hover {
+  color: #52abcb;
+}
+
+.copy_line {
+color: #7f4740;
+font-family: Arial;
+font-size: 10px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+text-decoration: none;
+display: block;
+letter-spacing: 0.3px;
 }
