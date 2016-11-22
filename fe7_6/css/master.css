@@ -728,6 +728,10 @@ aside.right_column h1 {
   left: 12px;
 }
 
+.left_column_h1__pos {
+  left: -2px;
+  top: 5px;
+}
 
 aside.left_column h1 {
   position: absolute;
