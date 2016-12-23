@@ -10,7 +10,7 @@
 .header_wrapper {
     position: relative;
     width: 100%;
-    min-height: 846px;
+    min-height: 847px;
     background: #775385 url(../img/header_bkg.jpg) no-repeat center top;
     border-bottom: 1px solid #37293e;
     overflow: hidden;
@@ -82,32 +82,15 @@ header {
     left: -2px;
 }
 
-/*.mobile_nav {
-    display: none;
-}*/
-
 .main_nav {
-  float: right;
-  width: 700px;
-  margin-top: 66px;
-  margin-right: -37px;
+  display: inline-block;
+  float: none;
+  width: 713px;
+  margin-top: 22px;
+  margin-left: 321px;
 }
 
-.clearfix {
-    content: '';
-    clear: both;
-}
-
-.main_nav__ul {
-    font-size: 0;
-    margin: 0 -48px 0 0;
-    width: 690px;
-    margin-top: 64px;
-    padding: 0;
-    height: 49px;
-    float: right;
-}
-
+.mobile_nav_visible__li,
 .main_nav__li {
     display: inline-block;
     vertical-align: top;
@@ -129,11 +112,12 @@ header {
     margin-left: 13px;
 }
 
-.main_nav__li:first-of-type {
+.mobile_nav_visible__li {
     margin-left: 0;
 }
 
-.main_nav a {
+.mobile_nav_visible__li a,
+.main_nav__li a {
     text-decoration: none;
     color: white;
     float: left;
@@ -142,18 +126,16 @@ header {
     /*border-bottom: 2px solid transparent;*/
 }
 
-.main_nav a:hover {
+.mobile_nav_visible__li a:hover,
+.main_nav__li a:hover {
     border-bottom: 2px solid #edbfff;
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 
 .mobile_nav_hidden__ul {
   display: none;
 }
 
-.mobile_nav_visible__li {
-  display: none;
-}
 
 /* BANER */
 
@@ -164,7 +146,7 @@ header {
 .main_baner_text {
     position: relative;
     width: 54.6875%;
-    left: -3px;
+    left: 0;
     top: 256px;
 }
 
@@ -187,7 +169,7 @@ header {
     letter-spacing: -0.1px;
     line-height: 36px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    padding-top: 158px;
+    padding-top: 45px;
 }
 
 .main_baner_text p {
@@ -210,7 +192,7 @@ header {
 .main_baner__slider {
     overflow: visible;
     position: absolute;
-    top: 757px;
+    top: 644px;;
     margin-left: 708px;
     width: 100px;
     height: 20px;
@@ -282,7 +264,7 @@ header {
     width: 338px;
     display: inline-block;
     float: left;
-    padding-left: 62px;
+    padding-left: 63px;
     padding-right: 20px;
     position: relative;
 }
@@ -291,7 +273,7 @@ header {
     width: 336px;
     display: inline-block;
     float: left;
-    padding-left: 62px;
+    padding-left: 64px;
     padding-right: 20px;
     position: relative;
 }
