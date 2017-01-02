@@ -27,6 +27,7 @@
 .main_wrapper_1 {
     width: 100%;
     min-height: 342px;
+    background-color: #322539;
     background-image: linear-gradient(to top, #322539 0%, #745083 100%);
     overflow: hidden;
 }
@@ -76,6 +77,10 @@ header {
 }
 
 .head_logo {
+    width: 152px;
+    height: 39px;
+    background: url(../img/logo-152_39.png) no-repeat center top;
+    background: url(../img/logo-152_39.svg) no-repeat center top;
     position: relative;
     float: left;
     top: 70px;
