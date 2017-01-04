@@ -1,0 +1,114 @@
+@media all and (min-width: 784px) and (max-width: 976px) {
+  .main_baner_text {
+    width: 55%;
+    height: 190px;
+    left: 0px;
+  }
+
+  .post_block__column1 {
+      min-height: 185px;
+  }
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media all and (min-width: 496px) and (max-width: 783px) {
+  .head_logo {
+      width: 152px;
+      height: 39px;
+      background: url(../img/logo-152_39.png) 100% 100%;
+      margin: 0px auto;
+      margin-bottom: 39px;
+      position: relative;
+      float: none;
+      top: 70px;
+  }
+
+  .mobile_nav_visible__ul {
+    position: relative;
+    margin: 2px auto;
+    padding-top: 0px;
+  }
+
+  .mobile_nav_visible__ul:hover {
+      position: absolute;
+      margin-top: 0px;
+      top: 0px;
+      height: 299px;
+  }
+
+  .mobile_nav_visible__ul:hover .mobile_nav_hidden__ul {
+    display: block;
+    padding-top: 1px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 245px;
+  }
+
+  .post_block__column1 {
+    min-height: 60px;
+    padding-bottom: 70px;
+  }
+
+  .post_block__recent {
+      margin-bottom: 70px;
+  }
+
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media all and (min-width: 0px) and (max-width: 495px) {
+  .head_logo {
+      width: 152px;
+      height: 39px;
+      background: url(../img/logo-152_39.png) 100% 100%;
+      margin: 0px auto;
+      margin-bottom: 39px;
+      position: relative;
+      float: none;
+      top: 70px;
+  }
+
+  .main_baner__slider {
+      top: 230px;
+  }
+
+  .mobile_nav_visible__ul {
+    position: relative;
+    margin: 2px auto;
+    padding-top: 0px;
+  }
+
+  .mobile_nav_visible__ul:hover {
+      position: absolute;
+      margin-top: 0px;
+      top: 0px;
+      height: 299px;
+  }
+
+  .mobile_nav_visible__ul:hover .mobile_nav_hidden__ul {
+    display: block;
+    padding-top: 1px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 0px;
+    width: 245px;
+  }
+
+  .post_block__column1 {
+    min-height: 60px;
+    padding-bottom: 40px;
+  }
+
+  .post_block__recent {
+      margin-bottom: 40px;
+  }
+}

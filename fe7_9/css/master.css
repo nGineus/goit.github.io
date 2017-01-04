@@ -79,7 +79,6 @@ header {
 .head_logo {
     width: 152px;
     height: 39px;
-    background: url(../img/logo-152_39.png) no-repeat center top;
     background: url(../img/logo-152_39.svg) no-repeat center top;
     position: relative;
     float: left;
@@ -112,7 +111,7 @@ header {
     text-transform: uppercase;
 }
 
-.main_nav__li:last-of-type {
+.main_nav__li__last-of-type {
     margin: 0;
     margin-left: 13px;
 }

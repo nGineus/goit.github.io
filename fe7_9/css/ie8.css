@@ -1,0 +1,31 @@
+.head_logo {
+    width: 152px;
+    height: 39px;
+    background: url(../img/logo-152_39.png) no-repeat;
+    position: relative;
+    float: left;
+    top: 70px;
+    left: -2px;
+}
+
+
+
+.main_baner_text h1 {
+    float: none;
+}
+
+.main_baner_text h2 {
+    padding-top: 8px;
+}
+
+.post_block__column1 {
+    min-height: 185px;
+}
+
+.post_block__slider {
+    position: absolute;
+    top: 381px;
+    margin-left: 130px;
+    width: 100px;
+    height: 20px;
+}
