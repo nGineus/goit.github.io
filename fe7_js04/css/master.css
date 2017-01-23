@@ -1,5 +1,17 @@
 p {
 	color: red;
 	text-align: center;
-	/*background-color: #bbb;*/
+}
+
+.center_dialog {
+	text-align: center;
+	float: none;
+}
+
+.center_blk {
+	margin: 0 auto;
+}
+
+.split_text {
+	color: gray;
 }
