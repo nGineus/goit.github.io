@@ -1,2 +1,2 @@
 # goit.github.io
-# Kutsenko Alexander
+# FE7: Kutsenko Alexander

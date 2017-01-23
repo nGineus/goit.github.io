@@ -1,6 +1,6 @@
 var bodyTag = document.querySelector("body");
 var h1 = document.createElement('h1');
-var container = document.createElement('section');
+var container = document.createElement('form');
 var level = 0;
 
 var data = {
