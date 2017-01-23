@@ -61,9 +61,9 @@ start_btn.addEventListener ('click', start_btn_fn);
 split_btn.addEventListener ('click', split_btn_fn);
 stop_btn.addEventListener ('click', stop_btn_fn);
 
-while (exit_state === 1) {
-  console.log('START Count: ', countTime(startDate, curentDate, eTime), ' > String: ', timeToText(countTime(startDate, curentDate, eTime)));
-  text_container.innerHTML = timeToText(countTime(startDate, curentDate, eTime));
-}
+// while (exit_state === 1) {
+//   console.log('START Count: ', countTime(startDate, curentDate, eTime), ' > String: ', timeToText(countTime(startDate, curentDate, eTime)));
+//   text_container.innerHTML = timeToText(countTime(startDate, curentDate, eTime));
+// }
 
 console.log('Done!');
