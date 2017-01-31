@@ -1,0 +1,88 @@
+h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+h5 {
+  padding-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.panel_page {
+  margin: 0 auto;
+  width: 600px;
+  text-align: justify;
+}
+
+.panel {
+  min-height: 360px;
+}
+
+.wrapper {
+  width: 620px;
+  margin: 0 auto;
+  min-height: 200px;
+  background-color: #e5e5e5;
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.nav {
+  margin: 0 auto;
+  display: table;
+}
+
+.nav li em {
+  background: url(../img/hover.png) no-repeat;
+width: 180px;
+height: 45px;
+position: absolute;
+top: -85px;
+left: -15px;
+text-align: center;
+padding: 20px 12px 10px;
+font-style: normal;
+z-index: 2;
+display: none;
+}
+
+.active {
+  font-weight: bold;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+
+.form-group {
+  position: relative;
+  width: 380px;
+  padding-top: 8px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.helper {
+  position: absolute;
+  top: 18px;
+  left: 390px;
+  width: 200px;
+  background-color: #ff9;
+  border-radius: 4px;
+  border: 2px solid white;
+  box-shadow: 1px 1px 6px 0px #aaa;
+}
+
+.helper p {
+  font-size: 14px;
+  padding: 4px;
+  padding-bottom: 0px;
+}
