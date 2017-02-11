@@ -1,0 +1,289 @@
+h1 {margin-top: 40px;}
+
+
+
+/* Carousel */
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 260px;
+    /*-webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;*/
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev, .jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    left: -60px;
+    top: 85px;
+}
+
+.jcarousel-control-next {
+    right: -60px;
+    top: 85px;
+}
+
+.jcarousel-control-prev:hover span, .jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive, .jcarousel-control-next.inactive {
+    opacity: 1;
+    cursor: default;
+}
+
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    margin: 18px auto;
+    width: 133px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font: 11px/11px Arial, sans-serif;
+    min-width: 14px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------*/
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.wrapper2 {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --------------------------- Nav -----------------------------------------------------------------*/
+
+/*@keyframes submenu_hover {
+    from {
+        background-color: #bbb;
+    }
+    30% {
+        background-color: #999;
+    }
+    to {
+        background-color: #838;
+    }
+}*/
+
+@keyframes menu_hover {
+    from {
+        background-color: #eee;
+    }
+    to {
+        background-color: #727;
+    }
+}
+
+.navmenu {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+    z-index: 100;
+}
+
+.navmenu li a, .navmenu li {
+    float: left;
+}
+
+.navmenu li {
+    list-style: none;
+    position: relative;
+}
+
+.navmenu li a {
+    padding: 1em 2em;
+    text-decoration: none;
+    font-family: helvetica, arial, sans-serif;
+    color: #222;
+    background: #dcd;
+}
+
+
+
+/*.navmenu li a:hover,
+.navmenu li a:focus,
+.navmenu li a:active {
+    background: #959;
+    color: white;
+    animation: menu_hover .2s;
+}*/
+
+
+/* Submenu */
+
+.hasChildren {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #737;
+    right: 0;
+    bottom: 0;
+}
+
+.navmenu li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 200;
+}
+
+/*.navmenu li:hover > ul {
+    display: block;
+}*/
+
+.navmenu li ul li, .navmenu li ul li a {
+    float: none;
+    text-align: left;
+}
+
+.navmenu li ul li {
+    _display: inline;
+    /* for IE6 */
+}
+
+.navmenu li ul li a {
+    min-width: 200px;
+    background-color: #dbd;
+    display: block;
+}
+
+
+/* SUBSUB Menu */
+
+.navmenu li ul li ul {
+    display: none;
+    left: 100%;
+    top: 0;
+    z-index: 500;
+}
+
+/*.navmenu li ul li:hover > ul {
+    display: block;
+
+}*/
+
+
+/* ----------------------------- Checks -----------------------------------------*/
+
+.customCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url("../img/checkboxes.png");
+}
+
+.customCheck input {
+    display: none;
+}
+
+
+/*----------------------------------------------------*/
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label {
+    cursor: pointer;
+}
+
+label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../img/checkboxes.png");
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+input[type=checkbox]:checked+label:after {
+    background-position: 0 -17px;
+}
+
+input[type=checkbox]:disabled+label:after {
+    background-position: 0 -34px;
+}
+
+
+/* ------------------------------------------------------------ */

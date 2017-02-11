@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kutsenko Alexander FE7 Homework JS6 (09-10)</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
+
+    <!-- <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.color.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">     <!-- Menu -->
+      <ul class="navmenu">
+        <li><a href="#">Домой</a></li>
+        <li><a href="#">Большое Меню 1</a>
+            <ul class="navmenu">
+                <li><a href="#">Пункт меню 1</a></li>
+                <li><a href="#">Пункт меню 2</a></li>
+                <li><a href="#">Пункт меню 3</a>
+                    <ul class="navmenu">
+                        <li><a href="#">Подпункт 1</a></li>
+                        <li><a href="#">Подпункт 2</a></li>
+                        <li><a href="#">Подпункт 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Меню 2</a></li>
+        <li><a href="#">Меню 3</a>
+            <ul>
+                <li><a href="#">Пункт меню 1</a></li>
+                <li><a href="#">Пункт меню 2</a>
+                    <ul class="navmenu">
+                        <li><a href="#">Подпункт 1</a></li>
+                        <li><a href="#">Подпункт 2</a></li>
+                        <li><a href="#">Подпункт 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Пункт меню 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Меню 4</a></li>
+    </ul>
+
+    </div>    <!-- Wrapper menu -->
+
+    <div class="wrapper carusel_page">  <!-- Carousel -->
+
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel" data-jcarousel="true">
+                <ul>
+                    <li><img src="./img/1-200x200.jpg" width="200" height="200" alt=""></li>
+                    <li><img src="./img/2-200x200.jpg" width="200" height="200" alt=""></li>
+                    <li><img src="./img/3-200x200.jpg" width="200" height="200" alt=""></li>
+                    <li><img src="./img/1-200x200.jpg" width="200" height="200" alt=""></li>
+                    <li><img src="./img/2-200x200.jpg" width="200" height="200" alt=""></li>
+                    <li><img src="./img/3-200x200.jpg" width="200" height="200" alt=""></li>
+                </ul>
+            </div>
+
+            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+
+            <p class="jcarousel-pagination" data-jcarouselpagination="true">
+              <a href="#" class="">1</a>
+              <a href="#" class="active">2</a>
+              <a href="#" class="">3</a>
+              <a href="#" class="">4</a>
+              <a href="#" class="">5</a>
+              <a href="#" class="">6</a>
+            </p>
+        </div>
+    </div>    <!-- Wrapper carousel -->
+
+    <div class="wrapper2">
+      <h1>Select box</h1>
+      <select>
+        <option>Борщ</option>
+        <option>Солянка</option>
+        <option>Щи</option>
+        <option>Гаспаччо</option>
+        <option>Свиная Рулька</option>
+        <option>Колбаски</option>
+        <option>Овощное рагу</option>
+        <option>Запеканка</option>
+      </select>
+    </div>
+
+    <div class="wrapper2">
+      <h1>Checkboxes jQuery</h1>
+      <p>Selection #1 <span class="customCheck"><input type="checkbox" name="ch1"/></span></p>
+      <p>Selection #2 <span class="customCheck"><input type="checkbox" name="ch2"/></span></p>
+      <p>Selection #3 <span class="customCheck"><input type="checkbox" name="ch3" checked/></span></p>
+      <p>Selection #4 <span class="customCheck"><input type="checkbox" name="ch4" disabled/></span></p>
+
+      <h1>Checkboxes CSS</h1>
+      <p><input type="checkbox" class="css_customCheck" id="test-check1"><label for="test-check1">Selection #1 </label></p>
+      <p><input type="checkbox" class="css_customCheck" id="test-check2"><label for="test-check2">Selection #2 </label></p>
+      <p><input type="checkbox" class="css_customCheck" id="test-check3" checked><label for="test-check3">Selection #3 </label></p>
+      <p><input type="checkbox" class="css_customCheck" id="test-check4" disabled><label for="test-check4">Selection #4 </label></p>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
