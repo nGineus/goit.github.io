@@ -1,0 +1,147 @@
+.karusel2,
+.karusel {
+  margin: 0 auto;
+  width: 765px;
+  min-height: 140px;
+  padding: 30px;
+  background-color: #eee;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    box-sizing: border-box;
+    max-width: 100px;
+    border: 2px solid white;
+}
+
+.carousel-element p {
+  width: 100px;
+  max-height: 40px;
+  overflow-y: hidden;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #646;
+  border-bottom-style: none;
+}
+
+.carousel-hider {
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    box-sizing: border-box;
+    width: 50px;
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: grey;
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+/* ---------------------------------  TEMPLATOR  ---------------------------------------*/
+
+#results {
+    width: 760px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.templator {
+    width: 320px;
+    display: inline-table;
+    min-height: 320px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.templator:nth-child(even) {
+  margin-left: 14px;
+  margin-right: 40px;
+}
+
+.templator:nth-child(odd) {
+  margin-left: 40px;
+  margin-right: 14px;
+}
+
+.templator h1 {
+  padding-top: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+}
+
+.templator p {
+  padding: 20px;
+  padding-top: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #222;
+}
+
+.templator img {
+  position: inherit;
+  margin: 10px 56px;
+  border: 2px solid white;
+}
+
+.templator:nth-child(4n-3),
+.templator:nth-child(4n-2) {
+  background-color: #ddd;
+}
+
+.templator:nth-child(4n-1),
+.templator:nth-child(4n-0) {
+  background-color: #eee;
+}
+
+.templator:nth-child(4n-3):hover,
+.templator:nth-child(4n-2):hover {
+  background-color: #cdc;
+}
+
+.templator:nth-child(4n-1):hover,
+.templator:nth-child(4n-0):hover {
+  background-color: #ded;
+}

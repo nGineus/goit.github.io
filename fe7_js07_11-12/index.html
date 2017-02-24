@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kutsenko Alexander FE7 Homework JS7 (11-12)</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/master.css">
+
+    <!-- <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.karusel.js"></script>
+    <script type="text/javascript" src="./js/jquery.template.js"></script>
+</head>
+
+<body>
+    <div class="karusel">
+      <div class="carousel-arrow-left"><span>Влево</span></div>
+      <div class="carousel-hider">
+        <ul class="carousel-list">
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 1</p></li>
+         <li class="carousel-element"><img src="./img/2-200x200.jpg"><p>Длинное описание 2</p></li>
+         <li class="carousel-element"><img src="./img/3-200x200.jpg"><p>Описание 3</p></li>
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 4</p></li>
+         <li class="carousel-element"><img src="./img/2-200x200.jpg"><p>Описание 5</p></li>
+         <li class="carousel-element"><img src="./img/3-200x200.jpg"><p>Очень очень очень очень длинное описание 6</p></li>
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 7</p></li>
+         <li class="carousel-element"><img src="./img/2-200x200.jpg"><p>Описание 8</p></li>
+       </ul>
+      </div> <!-- carousel hider -->
+      <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </div>
+
+    <div class="karusel2">
+      <div class="carousel-arrow-left"><span>Влево</span></div>
+      <div class="carousel-hider">
+        <ul class="carousel-list">
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 09</p></li>
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Длинное описание 10</p></li>
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 11</p></li>
+         <li class="carousel-element"><img src="./img/2-200x200.jpg"><p>Описание 12</p></li>
+         <li class="carousel-element"><img src="./img/3-200x200.jpg"><p>Описание 13</p></li>
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 14</p></li>
+         <li class="carousel-element"><img src="./img/2-200x200.jpg"><p>Описание 15</p></li>
+         <li class="carousel-element"><img src="./img/3-200x200.jpg"><p>Описание 16</p></li>
+         <li class="carousel-element"><img src="./img/1-200x200.jpg"><p>Описание 17</p></li>
+         <li class="carousel-element"><img src="./img/2-200x200.jpg"><p>Описание 18</p></li>
+         <li class="carousel-element"><img src="./img/3-200x200.jpg"><p>Описание 19</p></li>
+         <li class="carousel-element"><img src="./img/3-200x200.jpg"><p>Описание 20</p></li>
+       </ul>
+      </div> <!-- carousel hider -->
+      <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </div>
+
+    <div id="results"> <!-- TEMPLATOR BE HERE -->
+
+    </div>
+
+    <script type="text/html" id="item_tmpl">
+      <% for ( var i = 0; i < members.length; i++ ) { %>
+          <div class="templator"><h1><%=members[i].h1%></h1>
+          <img src="<%=members[i].img%>">
+          <p><%=members[i].p%></p></div><%}%>
+    </script>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
