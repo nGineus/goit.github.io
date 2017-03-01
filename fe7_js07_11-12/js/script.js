@@ -22,6 +22,7 @@ var data_Object = {
   // console.log("data_Object 1", data_Object.members[0]);
   // debugger;
 
+  JSON.stringify
 
   var results = document.getElementById("results");
   // console.log("T-M-P-L: ", tmpl("item_tmpl", data_Object));
