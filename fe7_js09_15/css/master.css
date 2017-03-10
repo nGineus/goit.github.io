@@ -1,0 +1,37 @@
+.wrapper {
+  width: 600px;
+  min-height: 45px;
+  margin: 20px auto;
+  background-color: #eee;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#output_block {
+  width: 608px;
+  margin: 20px auto;
+}
+
+.image_wrapper {
+  display: inline-table;
+  width: 190px;
+  min-height: 190px;
+  margin: 0 5px 0 5px;
+}
+
+.image_wrapper p {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.image_wrapper a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 10px;
+}
