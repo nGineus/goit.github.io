@@ -1,0 +1,12 @@
+p {
+  color: gray;
+  font-weight: normal;
+  font-family: sans-serif;
+}
+p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=master.css.map */
