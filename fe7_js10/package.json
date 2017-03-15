@@ -1,5 +1,5 @@
 {
-  "name": "My First Grunt-project",
+  "name": "my_first_prj",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "^0.4.5",

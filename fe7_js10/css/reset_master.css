@@ -58,17 +58,15 @@ table {
     border-spacing: 0;
     /* убираем расстояние между ячейками */
 }
-
 p {
-    color: gray;
-    font-weight: normal;
+  color: gray;
+  font-weight: normal;
+  font-family: sans-serif;
 }
-
 p a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-
 
 /*# sourceMappingURL=master.css.map */
