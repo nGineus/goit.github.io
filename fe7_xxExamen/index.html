@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kutsenko Alexander FE7 Homework JS11 (19-20)</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900" rel="stylesheet">
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/sass/master.css">
+
+    <!-- <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+     <div class="promo">
+       <div class="wrapper">
+       <p class="promo__urla">URLAUBSGLÜCK</p>
+       <p class="promo__login">Log in</p>
+       <div class="promo__signup">
+         <p>Sign up</p>
+       </div>
+       <p class="promo__title">Share your holiday dreams</p>
+       <p class="promo__subtitle">And find the perfect partner to fullfill it</p>
+       <div class="promo__button">
+         <p>Find your holiday partner</p>
+       </div>
+     </div>
+   </div>
+
+  <h3>How Urlaubsglück works?</h3>
+
+  <div class="wrapper">
+    <div class="hiw">
+       <div class="hiw__block__step1">
+         <section class="hiw__block">
+           <h4>step 1</h4>
+           <h5>Sed leo enim, condimentum</h5>
+           <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+         </section>
+       </div>
+
+       <div class="hiw__block__step2">
+         <section class="hiw__block">
+           <h4>step 2</h4>
+           <h5>Morbi velit risus</h5>
+           <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+         </section>
+       </div>
+
+       <div class="hiw__block__step3">
+         <section class="hiw__block">
+           <h4>step 3</h4>
+           <h5>Sed leo enim, condimentum</h5>
+           <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+         </section>
+       </div>
+
+     </div>
+
+     <h3>Meet a partner for your best holiday</h3>
+
+      <div class="partners">
+
+       <div class="partners__block">
+         <div class="partners__photo1 partners__photo">
+         </div>
+         <div class="partners__interest partners__interest1">
+           <img src="./img/interest1.svg" alt="">
+         </div>
+         <h4>Bradley Hunter</h4>
+         <p>Based in Chicago. I love playing tennis and loud music.</p>
+       </div>
+
+       <div class="partners__block">
+         <div class="partners__photo2 partners__photo">
+         </div>
+         <div class="partners__interest partners__interest2">
+           <img class="partners__icon" src="./img/interest2.svg" alt="">
+         </div>
+         <h4>Lucas Marsha</h4>
+         <p>I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+
+       </div>
+
+       <div class="partners__block">
+         <div class="partners__photo3 partners__photo">
+         </div>
+         <div class="partners__interest partners__interest3">
+           <img src="./img/interest3.svg" alt="">
+         </div>
+         <h4>Heather Walker</h4>
+         <p>I'm a happy person that loves cats and climbing on mountains.</p>
+
+       </div>
+
+       <div class="partners__block">
+         <div class="partners__photo4 partners__photo">
+         </div>
+         <div class="partners__interest partners__interest4">
+           <img src="./img/interest4.svg" alt="">
+         </div>
+         <h4>Bradley Hunter</h4>
+         <p>Based in Chicago. I love playing tennis and loud music.</p>
+
+       </div>
+
+     </div> <!-- END Ideas -->
+
+
+     <div class="partners__search"> <!-- Тут перехватим jQuery -->
+       <!-- <p></p> -->
+       <input type="text" name="search_partners" value="" placeholder="See other partners">
+     </div>
+
+     <h3>Discover holiday activity ideas</h3>
+
+     <div class="ideas">
+       <div class="ideas__block">
+         <img src="./img/ideas_pic1.jpg" alt="">
+         <p>Sport and Activity</p>
+       </div>
+
+       <div class="ideas__block">
+         <img src="./img/ideas_pic2.jpg" alt="">
+         <p>Wellnes and Health</p>
+       </div>
+
+       <div class="ideas__block">
+         <img src="./img/ideas_pic3.jpg" alt="">
+         <p>Extreme Sports and Expeditions</p>
+       </div>
+
+       <div class="ideas__block">
+         <img src="./img/ideas_pic4.jpg" alt="">
+         <p>Games</p>
+       </div>
+
+       <div class="ideas__block">
+         <img src="./img/ideas_pic5.jpg" alt="">
+         <p>Culture and Education</p>
+       </div>
+
+       <div class="ideas__block">
+         <img src="./img/ideas_pic6.jpg" alt="">
+         <p>Relaxation</p>
+       </div>
+
+       <div class="ideas__block">
+         <img src="./img/ideas_pic7.jpg" alt="">
+         <p>Travelling</p>
+       </div>
+     </div>
+
+     <h3>Discover holiday activity ideas</h3>
+
+     <div class="ideas_search"> <!-- Тут перехватим jQuery -->
+       <h4>Hi! What are your holiday interests?</h4>
+       <form class="ideas_search__form" action="" method="post">
+         <input type="text" name="search_ideas" value="" placeholder="Enter your interests">
+         <div class="ideas_search__button">
+           <p>Search partners</p>
+         </div>
+       </form>
+     </div>
+
+     <footer>
+       <p class="footer__title">URLAUBSGLÜCK</p>
+       <p class="footer__subtitle">Company</p>
+       <ul class="footer__menu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+       </ul>
+       <p class="footer__subtitle">Partners</p>
+       <p class="footer__designedby">Designed by</p>
+       <a class="footer__logo" href="https://www.google.com.ua/?q=ARETO"><img src="./img/footer_logo.svg" alt="Designed by ARETO Development"></a>
+     </footer>
+  </div>
+
+   <script src="./js/script.main.js"></script>
+</body>
+
+</html>
+
+<!--
++1 Кроссбраузерность IE8+
++2 Пиксельная точность для Chrome latest
+3 Верстка должна быть responsive, там есть три макета для разных девайсов. "Mobile first"
++4 Подключить нестандартные шрифты, сами файлы есть в папке fonts. Можно использовать GoogleFonts
++5 Использовать препроцессор на ваш выбор
++6 Применить BEM
++7 Никакого Bootstrap или Pure
++8 Максимально использовать возможности HTML5 и CSS3, но в рамках кроссбраузерности
++9 Применить подход gracefull degradation
++10 Все файлы должны собираться с помощью grunt
+11 На макете есть слайдеры, их нужно сделать с помощью jQuery-плагина
+12 В нижней части макета есть блок картинок (будем называть его плиткой) с заголовком "Discover holiday activity ideas".
+   Их нужно расположить с помощью плагина Masonry, либо с помощью Isotope, либо взять любой другой аналог
+13 Сами картинки нужно взять с помощью ajax-запроса с сервиса или с любого другого сервиса для поиска картинок
+14 После блока "плитки" есть поле поиска. При введении в поле текста и нажатии кнопки "Search partners"
+   нужно отправить запрос на получение картинок с нашего сервиса, и заменить картинки в плитке на новые,
+   соответствующие нашему запросу. Можно использовать шаблонизатор и заново проинициализировать masonry.
+   В качестве текста для каждой картинки можно использовать поле word из ответа сервера
+15 При первой загрузке страницы в плитке должны выводиться случайные картинки
+
+Бонусное задание:
+Для сборки вместо grunt использовать gulp
+Настроить сжатие картинок с помощью сборщика
+Сделать спрайты с помощью сборщика
++Сделать поддержку ретины
+Сделать все с помощью чистого js, без использования jQuery.
+  Masonry это позволяет, слайдер без jQuery можно найти
+-->

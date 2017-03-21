@@ -1,0 +1,6 @@
+$ cat .gitignore
+node_modules/
+.sass-cache/
+psd/
+*.map
+*.scss
