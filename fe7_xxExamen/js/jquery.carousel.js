@@ -22,4 +22,8 @@ $(function() {
             .jcarouselControl({
                 target: '+=1'
             });
-          });
+
+
+
+
+    });

@@ -1,13 +1,5 @@
 @import 'variables';
-
-@media #{$tablet} {
-
-}
-
-@media #{$desktop} {
-
-}
-
+@import 'jcarousel.basic';
 
 * {
   -webkit-box-sizing: border-box;
@@ -18,16 +10,13 @@
 .wrapper {
   position: relative;
   width: $mobile-width;
-  height: 540px;
   margin: 0 auto;
   @media #{$tablet} {
     width: $tablet-width;
-    height: 700px;
   }
 
   @media #{$desktop} {
     width: $desktop-width;
-    height: 700px;
 
   }
 }
@@ -59,8 +48,7 @@ h3 {
   width: 100%;
   height: 540px;
   background: url(../../img/backgroung_promo_full.jpg);
-  background-color: $g_main_color;
-  background-color: #ff4e50;
+  background-color: $g_background_color;
   background-position: center -12px; // -420px нужно подменить для мобильной версии
   background-repeat: no-repeat;
   background-size: auto 552px;
@@ -73,7 +61,7 @@ h3 {
   }
 
   @media #{$desktop} {
-    width: $desktop-width;
+    // width: $desktop-width;
   }
 
 }
@@ -96,6 +84,7 @@ h3 {
   }
 
   @media #{$desktop} {
+    left: 10px;
 
   }
 }
@@ -116,7 +105,7 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    left: 797px;
   }
 }
 
@@ -138,7 +127,7 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    left: 860px;
   }
 
   p {
@@ -200,6 +189,7 @@ h3 {
 
 .promo__button {
   @include main_button (280, 40, $g_main_color);
+  position: relative;
   cursor: pointer;
   top: 182px;
 
@@ -224,156 +214,207 @@ h3 {
 
 // How It works
 
+// .hiw {
+//   @media #{$tablet} {
+//     display: inline-block;
+//   }
+//
+//   @media #{$desktop} {
+//     display: inline-block;
+//     width: 960px;
+//   }
+//
+// }
+//
+// .hiw__block {
+//   display: table-cell;
+//   vertical-align: bottom;
+//   width: 300px;
+//   height: 240px;
+//   margin: 0 auto;
+//
+//   padding-left: 20px;
+//
+//   @include roundedCorners(4);
+//   @include linearGradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+//
+//   h4 {
+//      @include main_button (70, 20, $g_main_color);
+//      @include main_text (400, 10px, $g_text_color_white);
+//
+//      text-align: center;
+//      text-transform: uppercase;
+//      letter-spacing: 2px;
+//      padding-top: 6px;
+//
+//      margin: 0;
+//      left: 1px;
+//      margin-bottom: 5px;
+//   }
+//
+//   h5 {
+//     width: 260px;
+//     max-height: 81px;
+//     overflow: hidden;
+//     @include main_text (500, 24px, $g_text_color_white);
+//     line-height: 29px;
+//
+//     padding-top: 10px;
+//     padding-bottom: 14px;
+//
+//     @media #{$tablet} {
+//       width: 216px;
+//     }
+//
+//     @media #{$desktop} {
+//       width: 260px;
+//     }
+//   }
+//
+//   p {
+//     width: 260px;
+//     @include second_text (300, 14px, $g_text_color_light);
+//     line-height: 16px;
+//
+//     padding-bottom: 17px;
+//
+//     @media #{$tablet} {
+//       width: 216px;
+//     }
+//
+//     @media #{$desktop} {
+//       width: 260px;
+//     }
+//   }
+//
+//   @media #{$tablet} {
+//     width: 236px;
+//     height: 400px;
+//   }
+//
+//   @media #{$desktop} {
+//     width: 300px;
+//   } //end Media queries
+// }
+//
+// .hiw__block__step1 {
+//   width: 300px;
+//   height: 240px;
+//   margin: 0 auto 10px auto;
+//   @include roundedCorners(4);
+//   background-image: url("../../img/sec_step1.jpg");
+//   @include image-2x("../../img/sec_step1.jpg", 300, 240);
+//
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//
+//   @media #{$tablet} {
+//     float: left;
+//     width: 236px;
+//     height: 400px;
+//     margin: 20px 10px 0 10px;
+//   }
+//
+//   @media #{$desktop} {
+//     width: 300px;
+//     margin-top: 20px;
+//     margin-left: 10px;
+//     margin-right: 0;
+//   } //end Media queries
+// }
+//
+// .hiw__block__step2 {
+//   width: 300px;
+//   height: 240px;
+//   margin: 0 auto 10px auto;
+//   @include roundedCorners(4);
+//   background-image: url('../../img/sec_step2.jpg');
+//   @include image-2x("../../img/sec_step2.jpg", 300, 240);
+//
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//
+//   @media #{$tablet} {
+//     float: left;
+//     width: 236px;
+//     height: 400px;
+//
+//     margin: 20px 10px 0 10px;
+//   }
+//
+//   @media #{$desktop} {
+//     width: 300px;
+//     margin-top: 20px;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//   } //end Media queries
+// }
+//
+// .hiw__block__step3 {
+//   width: 300px;
+//   height: 240px;
+//   margin: 0 auto 10px auto;
+//   @include roundedCorners(4);
+//   background-image: url("../../img/sec_step3.jpg");
+//   @include image-2x("../../img/sec_step3.jpg", 300, 240);
+//
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//
+//   @media #{$tablet} {
+//     float: left;
+//     width: 236px;
+//     height: 400px;
+//
+//     margin: 20px 10px 0 10px;
+//   }
+//
+//   @media #{$desktop} {
+//     width: 300px;
+//
+//     margin-top: 20px;
+//     margin-left: 0;
+//     margin-right: 0;
+//   } //end Media queries
+// }
+
 .hiw {
-  @media #{$tablet} {
-    display: inline-block;
-  }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
 
-  @media #{$desktop} {
-    display: inline-block;
-  }
-
-}
-
-.hiw__block {
-  display: table-cell;
-  vertical-align: bottom;
-  width: 300px;
-  height: 240px;
-  margin: 0 auto;
-
-  padding-left: 20px;
-
-  @include roundedCorners(4);
-  @include linearGradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-
-  h4 {
-     @include main_button (70, 20, $g_main_color);
-     @include main_text (400, 10px, $g_text_color_white);
-
-     text-align: center;
-     text-transform: uppercase;
-     letter-spacing: 2px;
-     padding-top: 6px;
-
-     margin: 0;
-     left: 1px;
-     margin-bottom: 5px;
-  }
-
-  h5 {
-    width: 260px;
-    max-height: 81px;
-    overflow: hidden;
-    @include main_text (500, 24px, $g_text_color_white);
-    line-height: 29px;
-
-    padding-top: 10px;
-    padding-bottom: 14px;
+    margin-top: 13px;
+    margin-bottom: -9px;
 
     @media #{$tablet} {
-      width: 216px;
+      width: 100%;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      margin: 40px auto;
     }
-  }
 
-  p {
-    width: 260px;
-    @include second_text (300, 14px, $g_text_color_light);
-    line-height: 16px;
+    @media #{$desktop} {
+      width: 922px;
+      display: -ms-flexbox;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: center;
+      justify-content: center;
 
-    padding-bottom: 17px;
-
-    @media #{$tablet} {
-      width: 216px;
+      margin: 40px auto;
+      margin-left: 0;
+      margin-right: 0;
     }
-  }
-
-  @media #{$tablet} {
-    width: 236px;
-    height: 400px;
-  }
-
-  @media #{$desktop} {
-
-  } //end Media queries
-}
-
-.hiw__block__step1 {
-  width: 300px;
-  height: 240px;
-  margin: 0 auto 10px auto;
-  @include roundedCorners(4);
-  background-image: url("../../img/sec_step1.jpg");
-  @include image-2x("../../img/sec_step1.jpg", 300, 240);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media #{$tablet} {
-    float: left;
-    width: 236px;
-    height: 400px;
-
-    margin: 20px 10px 0 10px;
-  }
-
-  @media #{$desktop} {
-
-  } //end Media queries
-}
-
-.hiw__block__step2 {
-  width: 300px;
-  height: 240px;
-  margin: 0 auto 10px auto;
-  @include roundedCorners(4);
-  background-image: url('../../img/sec_step2.jpg');
-  @include image-2x("../../img/sec_step2.jpg", 300, 240);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media #{$tablet} {
-    float: left;
-    width: 236px;
-    height: 400px;
-
-    margin: 20px 10px 0 10px;
-  }
-
-  @media #{$desktop} {
-
-  } //end Media queries
-}
-
-.hiw__block__step3 {
-  width: 300px;
-  height: 240px;
-  margin: 0 auto 10px auto;
-  @include roundedCorners(4);
-  background-image: url("../../img/sec_step3.jpg");
-  @include image-2x("../../img/sec_step3.jpg", 300, 240);
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media #{$tablet} {
-    float: left;
-    width: 236px;
-    height: 400px;
-
-    margin: 20px 10px 0 10px;
-  }
-
-  @media #{$desktop} {
-
-  } //end Media queries
 }
 
 // Partners
 
 .partners{
-
 
   @media #{$tablet} {
     width: 600px;
@@ -385,6 +426,8 @@ h3 {
   }
 
   @media #{$desktop} {
+    width: 960px;
+    margin-left: 0;
 
   } //end Media queries
 
@@ -412,7 +455,7 @@ h3 {
     }
 
     @media #{$desktop} {
-
+      width: 200px
     } //end Media queries
 
   }
@@ -435,7 +478,7 @@ h3 {
     }
 
     @media #{$desktop} {
-
+      width: 200px;
     } //end Media queries
   }
 
@@ -448,7 +491,8 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    width: 220px;
+    margin-right: 20px;
   } //end Media queries
 }
 
@@ -477,7 +521,7 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    left: 52px;
   } //end Media queries
 
 }
@@ -493,7 +537,7 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    left: 52px;
   } //end Media queries
 }
 
@@ -509,7 +553,7 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    left: 52px;
   } //end Media queries
 }
 
@@ -525,7 +569,7 @@ h3 {
   }
 
   @media #{$desktop} {
-
+    left: 52px;
   } //end Media queries
 }
 
@@ -534,7 +578,7 @@ h3 {
   width: 40px;
   height: 40px;
   top: 85px;
-  left: 159px;
+  left: 184px;
   @include roundedCorners(20);
   border: 4px solid white;
 
@@ -542,6 +586,14 @@ h3 {
     display: block;
     margin: 0 auto;
     padding-top: 7px;
+  }
+
+  @media #{$tablet} {
+    left: 161px;
+  }
+
+  @media #{$desktop} {
+    left: 146px;
   }
 }
 
@@ -609,6 +661,7 @@ h3 {
 }
 
 .ideas__block {
+  background-color: $g_text_color_black;
   position: relative;
   overflow: hidden;
   width: 300px;
@@ -616,7 +669,6 @@ h3 {
   margin: 0 auto 10px auto;
   padding-bottom: 10px;
 
-  background-color: $g_text_color_black;
   @include roundedCorners(4);
   cursor: pointer;
 
@@ -625,7 +677,7 @@ h3 {
     float: left;
     width: 300px;
     @include roundedCorners(4);
-    @include opacity(0.7);
+    @include opacity(0.3);
   }
 
   p {
@@ -651,7 +703,10 @@ h3 {
   padding-bottom: 20px;
 
   @media #{$tablet} {
-    padding-bottom: 20px;
+    height: 177px;
+    overflow: hidden;
+
+    margin-top: 35px;
   }
 
   @media #{$desktop} {
@@ -677,10 +732,36 @@ h3 {
       @include second_text (300, 14px, $g_text_color_search);
 
       text-indent: 17px;
+      top: 42px;
+      left: 158px;
+
+      @media #{$tablet} {
+        width: 240px;
+        float: left;
+        position: relative;
+        top: 22px;
+
+      }
+
+      @media #{$desktop} {
+        left: 255px;
+      } //end Media queries
     }
 
     .ideas_search__button {
       @include main_button (280, 40, $g_main_color);
+      top: 59px;
+      left: 125px;
+
+      @media #{$tablet} {
+        position: relative;
+        width: 160px;
+        top: 39px;
+      }
+
+      @media #{$desktop} {
+
+      } //end Media queries
 
       p {
         position: relative;
@@ -688,6 +769,14 @@ h3 {
         text-align: center;
 
         top: 14px;
+
+        @media #{$tablet} {
+
+        }
+
+        @media #{$desktop} {
+
+        } //end Media queries
       }
     }
 
@@ -697,29 +786,96 @@ h3 {
 
 // Footer
 
+.wrapper__footer {
+  border-top: 4px solid $g_main_color;
+
+  @media #{$tablet} {
+    width: 100%auto;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  @media #{$desktop} {
+    width: 100%;
+    margin-top: 20px;
+  } //end Media queries
+
+}
+
+
+.footer {
+}
+
 footer {
   display: block;
   width: 320px;
   height: 193px;
-  border-top: 4px solid $g_main_color;
 
   margin-top: 20px;
 
-  .footer__subtitle {
-    @include main_text (700, 14px, $g_text_color_black);
-    text-align: center;
-
-    margin-top: 12px;
-    margin-bottom: 2px;
+  @media #{$tablet} {
+    width: 768px;
+    margin: 0 auto;
+    margin-top: -4px;
+    // display: inline-block;
   }
 
-  .footer__designedby {
-    @include main_text (700, 10px, $g_text_color_light);
-    text-transform: uppercase;
-    text-align: center;
+  @media #{$desktop} {
+    width: 960px;
 
-    margin-top: 17px;
-    letter-spacing: 0.8px;
+  } //end Media queries
+
+  .column1 {
+    @media #{$tablet} {
+      width: 260px;
+      float: left;
+      // margin-left: 56px;
+
+    }
+
+    @media #{$desktop} {
+      width: 246px;
+      margin-left: 0px;
+
+    } //end Media queries
+  }
+
+  .column2 {
+    @media #{$tablet} {
+      width: 172px;
+      float: left;
+      text-align: left;
+
+      margin-top: 30px;
+    }
+
+    @media #{$desktop} {
+      width: 159px;
+    } //end Media queries
+  }
+
+  .column3 {
+    @media #{$tablet} {
+      width: 186px;
+      float: left;
+      margin-top: 30px;
+
+    }
+
+    @media #{$desktop} {
+      width: 435px;
+    } //end Media queries
+  }
+
+  .column4 {
+    @media #{$tablet} {
+      float: left;
+      margin-top: 27px;
+    }
+
+    @media #{$desktop} {
+
+    } //end Media queries
   }
 
   .footer__title {
@@ -729,12 +885,62 @@ footer {
     text-align: center;
     letter-spacing: 0.7px;
     padding-top: 19px;
+
+    @media #{$tablet} {
+      float: left;
+      width: 205px;
+      padding-top: 43px;
+      margin-left: 10px;
+
+    }
+
+    @media #{$desktop} {
+      text-align: left;
+    } //end Media queries
+
   }
+
+  .footer__subtitle {
+    @include main_text (700, 14px, $g_text_color_black);
+    text-align: center;
+
+    margin-top: 12px;
+    margin-bottom: 2px;
+
+    @media #{$tablet} {
+      text-align: left;
+      text-indent: 5px;
+      margin-bottom: 12px;
+    }
+
+    @media #{$desktop} {
+
+    } //end Media queries
+  }
+
+  .footer__designedby {
+    @include main_text (700, 10px, $g_text_color_light);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 17px;
+    letter-spacing: 0.8px;
+
+    @media #{$tablet} {
+      text-indent: 32px;
+    }
+
+    @media #{$desktop} {
+
+    } //end Media queries
+  }
+
 
 
   .footer__menu {
     display: block;
     text-align: center;
+
 
     li {
         display: inline-block;
@@ -751,6 +957,15 @@ footer {
           }
         }
     }
+
+    @media #{$tablet} {
+      display: table-caption;
+      text-align: left;
+    }
+
+    @media #{$desktop} {
+
+    } //end Media queries
   }
 
   .footer__logo {

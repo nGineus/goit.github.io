@@ -17,10 +17,10 @@ $g_secondary_color3: #4e73db;
 // Sizes
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 960px; // 1440
 
-$tablet: "(min-width:" + $tablet-width + ") and (max-width: " + ($desktop-width - 1) + ")";
-$desktop: "(min-width:" + $desktop-width + ")";
+$tablet: "(min-width:" + ($tablet-width + 18) + ")"; // and (max-width: " + ($desktop-width - 1) + ")
+$desktop: "(min-width:" + ($desktop-width + 25) + ")";
 
 
 // Fonts
@@ -73,7 +73,7 @@ $g_sec_font_family: 'Roboto', sans-serif;
 }
 
 @mixin main_button ($width, $height, $color) {
-  position: relative;
+  // position: relative;
   margin: 0 auto;
   width: $width + px;
   height: $height + px;

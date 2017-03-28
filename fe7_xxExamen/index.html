@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kutsenko Alexander FE7 Homework JS11 (19-20)</title>
+    <title>Kutsenko Alexander FE7 Final Examen</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900" rel="stylesheet">
@@ -12,14 +12,15 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/sass/master.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/sass/master.css">
 
-    <!-- <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./js/jquery.jcarousel.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
-     <div class="promo">
+   <header class="promo">
        <div class="wrapper">
        <p class="promo__urla">URLAUBSGLÜCK</p>
        <p class="promo__login">Log in</p>
@@ -32,36 +33,84 @@
          <p>Find your holiday partner</p>
        </div>
      </div>
-   </div>
+   </header>
 
   <h3>How Urlaubsglück works?</h3>
+    <div class="wrapper">
 
-  <div class="wrapper">
-    <div class="hiw">
-       <div class="hiw__block__step1">
-         <section class="hiw__block">
-           <h4>step 1</h4>
-           <h5>Sed leo enim, condimentum</h5>
-           <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-         </section>
-       </div>
+     <div class="hiw">
+          <div class="jcarousel-wrapper">
+             <div class="jcarousel">
+                 <ul>
+                   <li>
+                     <img src="./img/sec_step1.jpg" alt="">
+                     <a>step 1</a>
+                     <h5>Sed leo enim, condimentum</h5>
+                     <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </li>
+                   <li><img src="./img/sec_step2.jpg" alt="">
+                     <a>step 2</a>
+                     <h5>Morbi velit risus</h5>
+                     <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                   </li>
+                   <li><img src="./img/sec_step3.jpg" alt="">
+                     <a>step 3</a>
+                     <h5>Sed leo enim, condimentum</h5>
+                     <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                   </li>
+                 </ul>
+               </div>
+               <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+               <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+           </div>
 
-       <div class="hiw__block__step2">
-         <section class="hiw__block">
-           <h4>step 2</h4>
-           <h5>Morbi velit risus</h5>
-           <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-         </section>
-       </div>
+           <div class="jcarousel-wrapper">
+              <div class="jcarousel">
+                  <ul>
+                    <li><img src="./img/sec_step2.jpg" alt="">
+                      <a>step 2</a>
+                      <h5>Morbi velit risus</h5>
+                      <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                    </li>
+                    <li><img src="./img/sec_step3.jpg" alt="">
+                      <a>step 3</a>
+                      <h5>Sed leo enim, condimentum</h5>
+                      <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </li>
+                    <li><img src="./img/sec_step1.jpg" alt="">
+                        <a>step 1</a>
+                        <h5>Sed leo enim, condimentum</h5>
+                        <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                     </li>
+                  </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            </div>
 
-       <div class="hiw__block__step3">
-         <section class="hiw__block">
-           <h4>step 3</h4>
-           <h5>Sed leo enim, condimentum</h5>
-           <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-         </section>
-       </div>
-
+            <div class="jcarousel-wrapper">
+               <div class="jcarousel">
+                   <ul>
+                     <li><img src="./img/sec_step3.jpg" alt="">
+                       <a>step 3</a>
+                       <h5>Sed leo enim, condimentum</h5>
+                       <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                     </li>
+                     <li><img src="./img/sec_step2.jpg" alt="">
+                       <a>step 2</a>
+                       <h5>Morbi velit risus</h5>
+                       <p>Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                     </li>
+                     <li><img src="./img/sec_step1.jpg" alt="">
+                       <a>step 1</a>
+                       <h5>Sed leo enim, condimentum</h5>
+                       <p>Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                     </li>
+                   </ul>
+                 </div>
+                 <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                 <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+             </div>
      </div>
 
      <h3>Meet a partner for your best holiday</h3>
@@ -115,7 +164,6 @@
 
 
      <div class="partners__search"> <!-- Тут перехватим jQuery -->
-       <!-- <p></p> -->
        <input type="text" name="search_partners" value="" placeholder="See other partners">
      </div>
 
@@ -170,22 +218,33 @@
        </form>
      </div>
 
-     <footer>
+  <div class="wrapper__footer">
+   <footer>
+     <div class="column1">
        <p class="footer__title">URLAUBSGLÜCK</p>
+     </div>
+
+     <div class="column2">
        <p class="footer__subtitle">Company</p>
        <ul class="footer__menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Blog</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contacts</a></li>
+         <li><a href="#">Press</a></li>
+         <li><a href="#">Blog</a></li>
        </ul>
+     </div>
+
+     <div class="column3">
        <p class="footer__subtitle">Partners</p>
+     </div>
+
+     <div class="column4">
        <p class="footer__designedby">Designed by</p>
        <a class="footer__logo" href="https://www.google.com.ua/?q=ARETO"><img src="./img/footer_logo.svg" alt="Designed by ARETO Development"></a>
-     </footer>
+     </div>
+   </footer>
   </div>
-
-   <script src="./js/script.main.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
